@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+  <head>
+
+
+
+    <style type="text/css">
+
+      @keyframes spin {
+        100% {
+          transform : translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      video {
+        transform : translate(-50%, -50%) rotate(0deg);
+        position  : fixed;
+        top       : 50%;
+        left      : 50%;
+        animation : spin 4s linear infinite;
+      }
+
+    </style>
+
+
+
+    <script type="text/javascript">
+
+      window.onload = () =>
+        document.getElementById('flick').play();
+
+    </script>
+
+
+
+  </head>
+
+
+
+  <body>
+
+    <video controls id="flick" src="./sample_960x540.mp4"></video>
+
+  </body>
+
+</html>
